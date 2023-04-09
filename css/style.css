@@ -1,0 +1,383 @@
+@charset "utf-8";
+* {margin: 0;padding:0;outline: none;
+
+}
+
+
+html{height: 100%;}
+body{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(237, 241, 226);
+    color: #333;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1em;
+    line-height: 135%;
+    float: left;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+a {
+    color: #d38484;
+    text-decoration: none;
+}
+a:hover{
+    color: #efdea0;  
+}/*
+a, a:hover{
+    -webkit-transition:all.6s ease;
+    -moz-transition:all.6s ease;
+    -o-transition:all.6s ease;
+    -ms-transition:all.6s ease;
+    transition:all.6s ease;
+}*/
+.clear{
+    clear: both;
+}
+/*Стили для шапки*/
+#header{
+    width: 98%;
+    float: left;
+    padding: 1%;
+    background-color: #fafafa;
+    border-bottom: 2px solid silver;
+    margin-bottom: 30px;
+}
+#header #logo{
+    width: 20%;
+float: left;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+#header #logo a{
+   color: #ffffff;
+
+
+}
+header #logo div{
+    color: #e36565;    margin-top: 30px;
+font-size: 2em;
+    font-family: Times New Roman, sans-serif; 
+
+margin-left: 35px;
+margin-bottom: 20px;}
+header #menuHead{
+    width: 65%;
+    float: left;    margin-left: 1%;
+    margin-bottom: 3%;
+}
+.colmenu{
+    background-color: #e36565; width: 100%;
+    height: 38px;
+}
+header #menuHead div{
+  margin-top: 1px;
+    float: left;
+    padding: 10px;
+    background-color: #e36565;
+    border-radius: 1px;
+    color: #ffffff;
+
+}
+
+header #menuHead div:hover{
+    color: #6fffec;
+    margin-top: -1px;background-color: #c45b5b;
+}
+header #regAuth{
+    color: #ffffff;
+    width: 30%;
+    float: left;
+    text-align: right;
+    font-size: 1em;
+    margin-top: 4px;
+}
+header #authcol{
+    color: #ffffff;
+}
+header #authcol:hover{
+    color: #00ffdd;
+}
+/*Стили для всего документа*/
+#wrapper{
+    width: 80%;
+    margin-left: 8%;
+    float: left;
+}
+/*Стили для левой колонки*/
+
+@media (min-width:800px){
+#wrapper #leftCol{
+    width: 70%;
+    margin-right: 9%;
+    float: left;
+}}
+@media (max-width:799px){
+    #wrapper #leftCol{
+        width: 90%;
+        margin-right: 5%;
+        float: left;
+    }}
+#wrapper #leftCol #bigArticle{
+    width: 78%;
+    margin-left: 8%;
+    background-color: #f6f6f6;
+    padding: 1%;
+    float: left;
+}
+#wrapper #leftCol #bigArticle img,#wrapper #leftCol .article img{
+    width: 90%;
+    margin-bottom: 10px;
+    float: left;
+}
+#wrapper #leftCol #bigArticle h2,#wrapper #leftCol .article h2{
+    font-weight:normal;
+    font-size:1.4em;
+    color: #636363;
+    font-family: Comic Sans MS, sans-serif;
+}
+#wrapper #leftCol #bigArticle h2,#wrapper #leftCol .article h3{
+    font-weight:normal;
+    font-size:1.4em;
+    color: #636363;
+    font-family: Comic Sans MS, sans-serif;
+}
+#wrapper #leftCol #bigArticle p,#wrapper #leftCol .article p{
+    width:90%;
+    margin-left:5%;
+}
+/*Кнопки на статьях главная стр*/
+#wrapper #leftCol #bigArticle div.more,#wrapper #leftCol .article div.more{
+    padding:5px;
+    border-radius:10px;
+    background-color: #878787;
+    color:#fff;
+    width:10%;
+    text-align:center;
+    margin-top:10px;
+}
+#wrapper #leftCol #bigArticle div.more1,#wrapper #leftCol .article div.more{
+    padding:5px;
+    border-radius:10px;
+    background-color: #878787;
+    color:#fff;
+    width:15%;
+    text-align:center;
+    margin-top:10px;
+}
+#wrapper #leftCol .article div.more:hover{
+    padding:5px;
+    border-radius:10px;
+    background-color: #e36565; 
+    color: #6fffec;
+    width:15%;
+    text-align:center;
+    margin-top:10px;
+}
+#wrapper #leftCol #bigArticle div.more:hover{
+    padding:5px;
+    border-radius:10px;
+    background-color: #e36565; 
+    color: #6fffec;
+    width:10%;
+    text-align:center;
+    margin-top:10px;
+}
+/**/
+#wrapper #leftCol .article{
+    width:40%;
+    margin-left:5%;
+    background-color: #f6f6f6;
+    padding: 1%;
+    float: left;
+}
+#wrapper #leftCol input{
+    width: 40%;
+    margin-left: 30%;
+    float: left;
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 5px;
+    color: slateblue;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+#wrapper #leftCol input:focus, #wrapper #leftCol textarea:focus{
+    border: 2px solid #f78080;/* Изменение границы при наведении  */
+}
+#wrapper #leftCol input#done:hover{
+    border: 2px solid #f8d881; /* Изменение границы при наведении  */
+    cursor: pointer; /* Изменение курсора при наведении  */
+}
+#wrapper #leftCol textarea{
+    width: 50%;
+    height: 150px; /*Высота поля*/
+    margin-left: 25%;
+    float: left;
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 5px;
+    color: slateblue;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    resize: none;/*Отмена растягивания поля*/
+}
+#wrapper #leftCol #massageSwow{
+    font-size: 1.2em;
+    float: left;
+    color:red;
+    width: 100%;
+    text-align: center;
+}
+/*Стили для правой колонки*/
+@media (min-width:800px){
+ #rightCol{
+     position: absolute;
+  width: 20%;
+  right: 50px;
+    top: 128px;
+    float: right;
+    margin-right:0;
+}}
+@media (max-width:799px){
+    #rightCol{
+        position: absolute;
+     width: 80%;
+     right: 50px;
+       top: 128px;
+       float: right;
+       margin-right:0;
+   }}
+ #rightCol .banner1{
+width: 100%;
+margin-top: 6%;
+    float: left;
+    margin-bottom: 20px;
+
+}
+#rightCol .banner1:hover{
+    width: 101%;
+
+        float: left;
+        margin-bottom: 18px;
+    
+    }
+ #rightCol .banner2{
+    width: 99%;
+  float: left;
+  margin-bottom: 20px;
+}
+#rightCol .banner2:hover{
+    width: 100%;
+    margin-bottom: 14.8px;
+}
+/*#wrapper #rightCol .banner3{
+    position: absolute;  
+    width: 19%;
+    margin-left: 65%;
+    margin-top: -32%;
+  float: left;
+  margin-bottom: 20px;
+  border: 2px solid silver;
+box-sizing: border-box;
+}*/
+
+/*Стили для О нас*/
+#wrapper #leftCol #about_us{
+    width: 76%;
+    margin-left: 10%;
+    border: 1px solid silver;
+    background-color: #f4f4f4;
+    padding: 2%;
+margin-bottom: 50px;
+margin-top: 20px;
+}
+/*Стили для курток*/
+#wrapper #leftCol .katArticle img{
+    width: 100%;
+    margin-bottom: 10px;
+    float: left;
+}
+#wrapper #leftCol .katArticle h2{
+    font-weight:normal;
+    font-size:1.4em;
+    color: #636363;
+    font-family: Comic Sans MS, sans-serif;
+}
+#wrapper #leftCol .katArticle p{
+    width:90%;
+    margin-left:5%;
+}
+/*Кнопки на статьях главная стр*/
+#wrapper #leftCol .katArticle div.more{
+    padding:5px;
+    border-radius:10px;
+    background-color: #878787;
+    color:#fff;
+    width:10%;
+    text-align:center;
+    margin-top:10px;
+}
+
+
+#wrapper #leftCol .katArticle div.more:hover{
+    padding:5px;
+    border-radius:10px;
+    background-color: #00ffdd;
+    color:#fff;
+    width:15%;
+    text-align:center;
+    margin-top:10px;
+}
+#wrapper #leftCol .katArticle{
+    width:38%;
+    margin-left:5%;
+    background-color: #f6f6f6;
+    padding: 1%;
+    float: left;
+}
+
+/*Стили для footer*/
+footer{
+    width: 95%;
+    float: left;
+    padding: 1%;
+    background-color: #fafafa;
+    border-top: 2xp solid silver;
+    margin-top: 300px;
+}
+footer #social{
+    float: left;
+    width: 50%;
+}
+footer #social img{
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+footer #rights{
+    float: right;
+    width: 45%;
+    text-align: right;
+    font-size: 1.1em;
+}
+.butclass{
+    margin-top: 120px;
+    margin-left: -220px;
+    width: 100px;
+    background-color: #6fffec;
+}
+.butclass:hover{
+
+    background-color: #eefffd;
+}
+.rg{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
